@@ -1,3 +1,4 @@
+pipeline {
     agent any
 
     stages {
@@ -14,4 +15,4 @@
         cleanWs()
       }
     }
-}
+   }
