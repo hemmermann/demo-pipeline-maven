@@ -1,5 +1,8 @@
 pipeline {
-    agent any
+    agent {
+        image: "maven:3.8.1-jdk13"
+        label: docker
+    }
 
     tools {
             maven 'maven'
