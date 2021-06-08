@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-            sh "mvnw -version"
-            sh "mvnw clean install"
+            sh "maven -version"
+            sh "maven clean install"
             }
         }
     }
