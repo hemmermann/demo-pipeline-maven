@@ -2,13 +2,9 @@ pipeline {
     agent {
         docker {
             image "hermannjirka/java-slave-16:latest"
-            label "java-slave-16"
         }
     }
 
-    tools {
-            maven 'maven'
-    }
     stages {
         stage("Build") {
             steps {
