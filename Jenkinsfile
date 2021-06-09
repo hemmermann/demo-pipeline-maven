@@ -1,8 +1,6 @@
 pipeline {
     agent {
-        docker {
-            image "hermannjirka/java-slave-16:latest"
-        }
+        label "java-slave-14"
     }
 
     stages {
