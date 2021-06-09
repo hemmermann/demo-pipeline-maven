@@ -1,8 +1,8 @@
 pipeline {
     agent {
         docker {
-            image "maven:3.8.1-jdk13"
-            label "docker"
+            image "hermannjirka/java-slave-16:latest"
+            label "java-slave-16"
         }
     }
 
